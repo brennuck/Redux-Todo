@@ -25,6 +25,11 @@ class TodoList extends React.Component {
         return (
             <div>
                 <h2>Todo List</h2>
+                {this.props.tasks.map((todo) => (
+                    <div>
+                        <p>{todo.name}</p>
+                    </div>
+                ))}
                 <input
                     type='text'
                     name='todo'
